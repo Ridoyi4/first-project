@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        nav a{
+    text-decoration: none;
+}
+#headerbutton{
+    background-size: 30px;
+    
+
+}
+.productimage1{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+.productimage1 img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width:768px){
+    .productimage1{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (max-width:480px){
+    .productimage1{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+.cardsectionlink{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+.cardsectionlink card{
+ width: 100%;
+ aspect-ratio: 1/1;
+ object-fit: cover;
+ display: block;
+}
+@media (max-width:768px){
+    .cardsectionlink{
+grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (max-width:480px){
+    .cardsectionlink{
+grid-template-columns: repeat(2,1fr);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!--header section-->
+    <header class="headersection fw-bold d-flex justify-content-between align-items-center  flex-column flex-md-row  container shadow" >
+<div class="headerlogo d-flex gap-2 ">
+<div class="headericon"><i class="fa-sharp fa-solid fa-globe text-primary "></i></div>
+<div class="headertext text-dark">AK.Ri<span class="text-primary">doy</span></div>
+</div>
+<nav class="d-flex gap-5 justify-content-center">
+    <a href="#" class="active">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contuct</a>
+    
+    
+</nav>
+<button class="btn btn-primary " id="headerbutton" onclick="alert('I do this work sincerely.')"> clickMe</button>
+
+    </header> 
+    <!--header section-->
+
+    <!--self section-->
+    <section class="selfsection container text-wrap">
+<div class=" rounded mt-2 border-primary">
+    <marquee class="text-primary">"হাই, আমি মো: আশরাফুল হোসাইন রিদয়। আমি একজন ফ্রন্ট-এন্ড ওয়েব ডেভলপার (Front-end Web Developer) এবং সেই সাথে ফিগমা টু এইচটিএমএল ডেভলপার (Figma to HTML Developer)।"</marquee>
+</div>
+    </section>
+    <!--self section end-->
+
+
+    <!--product section start-->
+
+<section class="productsection container">
+<div class="productimage1">
+<img src="1.jpg">
+<img src="2.webp">
+<img src="3.jpg">
+<img src="4.png">
+<img src="5.png">
+
+</div>
+</section>
+
+    <!--product section end-->
+    
+    <!--accordion section start-->
+<div class="container mt-4">
+<div class="accordion">
+<div class="accordionbutton1">
+    <button class="btn btn-primary accordion-button text-center" data-bs-toggle="collapse" data-bs-target="#ridoy2">
+        আমার সম্পর্কে জানতে এখানে ক্লিক করুন ;
+    </button>
+    <div id="ridoy2">হ্যালো! আমি একজন পেশাদার ফ্রন্ট-এন্ড ওয়েব ডিজাইনার এবং ফিগমা টু এইচটিএমএল এক্সপার্ট। আমি যেকোনো ফিগমা (Figma) ডিজাইনকে রেসপন্সিভ, পিক্সেল-নিখুঁত এবং ইউজার-ফ্রেন্ডলি এইচটিএমএল ওয়েবসাইটে রূপান্তর করি।</div>
+    </div>    
+
+
+
+
+    <div class="accordionbutton2">
+    <button class="btn btn-dark accordion-button text-center" data-bs-toggle="collapse" data-bs-target="#ridoy3">
+        আমার সম্পর্কে জানতে এখানে ক্লিক করুন ;
+    </button>
+    <div id="ridoy3">হ্যালো! আমি একজন পেশাদার ফ্রন্ট-এন্ড ওয়েব ডিজাইনার এবং ফিগমা টু এইচটিএমএল এক্সপার্ট। আমি যেকোনো ফিগমা (Figma) ডিজাইনকে রেসপন্সিভ, পিক্সেল-নিখুঁত এবং ইউজার-ফ্রেন্ডলি এইচটিএমএল ওয়েবসাইটে রূপান্তর করি।</div>
+    </div>    
+
+
+
+
+
+    <div class="accordionbutton3">
+    <button class="btn btn-secondary accordion-button text-center" data-bs-toggle="collapse" data-bs-target="#ridoy">
+        আমার সম্পর্কে জানতে এখানে ক্লিক করুন ;
+    </button>
+    <div id="ridoy">হ্যালো! আমি একজন পেশাদার ফ্রন্ট-এন্ড ওয়েব ডিজাইনার এবং ফিগমা টু এইচটিএমএল এক্সপার্ট। আমি যেকোনো ফিগমা (Figma) ডিজাইনকে রেসপন্সিভ, পিক্সেল-নিখুঁত এবং ইউজার-ফ্রেন্ডলি এইচটিএমএল ওয়েবসাইটে রূপান্তর করি।</div>
+    </div>    
+</div>
+
+</div>
+    <!--accordion section end-->
+
+
+
+    <!--card section start-->
+
+<div class="cardsectionlink container">
+<div class="card" >
+<img src="6.jpg" alt="ridoy" class="card-img-top">
+<h5 class="card-header">"নাইসার বোতামে ক্লিক করুন"</h5>
+<p class="card-text">"আপনার যেকোনো ফিগমা ডিজাইন (Figma Design) কোডিং বা ডেভেলপমেন্ট করার প্রয়োজন হলে আমাকে জানাতে পারেন। আমি আপনার ডিজাইনকে নিখুঁতভাবে লাইভ ওয়েবসাইটে রূপান্তর করে দেব।"</p>
+<a class="stretched-link btn btn-primary" href="#">button</a>
+</div>
+
+
+
+
+<div class="card" >
+<img src="7.jpg" alt="ridoy" class="card-img-top">
+<h5 class="card-header">"নাইসার বোতামে ক্লিক করুন"</h5>
+<p class="card-text">"আপনার যেকোনো ফিগমা ডিজাইন (Figma Design) কোডিং বা ডেভেলপমেন্ট করার প্রয়োজন হলে আমাকে জানাতে পারেন। আমি আপনার ডিজাইনকে নিখুঁতভাবে লাইভ ওয়েবসাইটে রূপান্তর করে দেব।"</p>
+<a class="stretched-link btn btn-primary" href="#">button</a>
+</div>
+
+
+
+<div class="card" >
+<img src="8.jpg" alt="ridoy" class="card-img-top">
+<h5 class="card-header">"নাইসার বোতামে ক্লিক করুন"</h5>
+<p class="card-text">"আপনার যেকোনো ফিগমা ডিজাইন (Figma Design) কোডিং বা ডেভেলপমেন্ট করার প্রয়োজন হলে আমাকে জানাতে পারেন। আমি আপনার ডিজাইনকে নিখুঁতভাবে লাইভ ওয়েবসাইটে রূপান্তর করে দেব।"</p>
+<a class="stretched-link btn btn-primary" href="#">button</a>
+</div>
+
+
+
+<div class="card" >
+<img src="9.webp" alt="ridoy" class="card-img-top">
+<h5 class="card-header">"নাইসার বোতামে ক্লিক করুন"</h5>
+<p class="card-text">"আপনার যেকোনো ফিগমা ডিজাইন (Figma Design) কোডিং বা ডেভেলপমেন্ট করার প্রয়োজন হলে আমাকে জানাতে পারেন। আমি আপনার ডিজাইনকে নিখুঁতভাবে লাইভ ওয়েবসাইটে রূপান্তর করে দেব।"</p>
+<a class="stretched-link btn btn-primary" href="#">button</a>
+</div>
+
+
+
+<div class="card" >
+<img src="10.webp" alt="ridoy" class="card-img-top">
+<h5 class="card-header">"নাইসার বোতামে ক্লিক করুন"</h5>
+<p class="card-text">"আপনার যেকোনো ফিগমা ডিজাইন (Figma Design) কোডিং বা ডেভেলপমেন্ট করার প্রয়োজন হলে আমাকে জানাতে পারেন। আমি আপনার ডিজাইনকে নিখুঁতভাবে লাইভ ওয়েবসাইটে রূপান্তর করে দেব।"</p>
+<a class="stretched-link btn btn-primary" href="#">button</a>
+</div>
+</div>
+
+    <!--card section end-->
+
+<!--rejistration form start-->
+
+<h1 class="text-center text-primary mt-3">Registration Form</h1>
+
+
+<div class="container shadow  bg-body rounded">
+<form class="row g-3 formvalidation" novalidate action="#" method="post">
+<div class="col-md-6 col-12">
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" id="email" placeholder="enter your email" required>
+    <div class="valid-feedback">
+    <p>your email is valid</p>
+    </div>
+    <div class="invalid-feedback">
+    <p>your email is not valid</p>
+    </div>
+</div>
+
+<div class="col-md-6 col-12">
+<label for="password">Password:</label>
+<input type="password" class="form-control" id="password" placeholder="enter your password" required>
+<div class="valid-feedback">
+    <p>your password is valid</p>
+    </div>
+    <div class="invalid-feedback">
+    <p>your password is not valid</p>
+    </div>
+</div>
+
+<div class="col-md-12 col-12">
+<label for="address">Address:</label>
+<input type="text" class="form-control" placeholder="write your address" id="address" required>
+<div class="valid-feedback">
+    <p>your address is valid</p>
+    </div>
+    <div class="invalid-feedback">
+    <p>your address is not valid</p>
+    </div>
+</div>
+
+<div class="col-md-6 col-12">
+<label for="city">City</label>
+<input type="text" class="form-control" placeholder="city" id="city" required>
+<div class="valid-feedback">
+    <p>your city is valid</p>
+    </div>
+    <div class="invalid-feedback">
+    <p>your city is not valid</p>
+    </div>
+</div>
+
+<div class="col-md-4 col-12">
+<label for="state">State</label>
+<select class="form-select" required>
+    <div class="valid-feedback">
+    <p>your state is valid</p>
+    </div>
+    <div class="invalid-feedback">
+    <p>your state is not valid</p>
+    </div>
+<option class=" disabled selected ">choose</option>
+<option>Fultola Bazar</option>
+<option>Garakhula Bazar</option>
+</select>
+</div>
+
+<div class="col-md-2 col-12">
+<label for="zip">Zip</label>
+<input type="code" placeholder="code" class="form-control" id="zip" required>
+<div class="valid-feedback">
+    <p>your zip is valid</p>
+    </div>
+    <div class="invalid-feedback">
+    <p>your zip is not valid</p>
+    </div>
+</div>
+
+<div class="col-md-12 col-12">
+<input type="checkbox" id="checkbox" class="form-check-input" required>
+<label for="checkbox" class="form-check-label">please click me</label>
+<div class="valid-feedback">
+    <p>your checkbox is valid</p>
+    </div>
+    <div class="invalid-feedback">
+    <p>your checkbox is not valid</p>
+    </div>
+</div>
+
+<button class="btn btn-primary w-100" type="submit">submit</button>
+</form>
+</div>
+
+
+<!--registration form end-->
+
+<!--footer section start-->
+<footer class="container bg-secondary rounded mt-5 mb-4 " style="height: 350px;">
+    <h2 class="text-center text-body mt-2">My experience range</h2>
+<div class="progress mt-5">
+    <div class="progress-bar-striped progress-bar-animated bg-primary" style="width: 80%;">HTML</div>
+</div>
+<div class="progress mt-5">
+<div class="progress-bar progress-bar-animated progress-bar-striped bg-danger" style="width: 70%; " >CSS</div>
+</div>
+<div class="progress mt-5">
+<div class="progress-bar progress-bar-animated progress-bar-striped bg-info" style="width: 50%;">JAVASCRIPT</div>
+</div>
+<div class="progress mt-5">
+<div class="progress-bar progress-bar-animated progress-bar-striped bg-success " style="width: 70%;">BOOTSTRAP</div>
+</div>
+</footer>
+
+<!--footer section end-->
+
+
+
+    
+
+
+<script>
+    document.addEventListener("DOMContentLoaded",(e)=>{
+        alert("ওয়েবসাইটে ঢুকতে চাইলে 'OK' ক্লিক করুন।")
+    })
+    addEventListener("beforeunload",(e)=>{
+        e.preventDefault();
+        e.returnValue='';
+    })
+
+
+document.querySelector('.formvalidation').addEventListener('submit', function(event) {
+    if (!this.checkValidity()) event.preventDefault();
+    this.classList.add('was-validated');
+});
+
+</script>
+</body>
+</html>
